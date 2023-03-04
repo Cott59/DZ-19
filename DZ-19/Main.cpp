@@ -5,7 +5,7 @@
 int p,maxx;
 int max(int num1,int num2) {
 	
-	for (int i = 2; i <= num1; i++)
+	for (int i = 1; i <= num1; i++)
 		if (num1 % i == 0 && num2 % i == 0)
 			maxx = i;
 
@@ -63,47 +63,47 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 
 
-	std::cout << " Çàäà÷à 1 \n ";
+	std::cout << " Ã‡Ã Ã¤Ã Ã·Ã  1 \n ";
 	int a, b;
-	std::cout << " Ââåäèòå äâà ÷èñëà -> ";
+	std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¤Ã¢Ã  Ã·Ã¨Ã±Ã«Ã  -> ";
 	std::cin >> a >> b;
 	std::cout << max(a,b) << '\n';
 	std::cout << "\n\n";
 
-	std::cout << " Çàäà÷à 2 \n ";
+	std::cout << " Ã‡Ã Ã¤Ã Ã·Ã  2 \n ";
 	int q;
-	std::cout << " Ââåäèòå ÷èñëî -> ";
+	std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã® -> ";
 	std::cin >> q;
-	std::cout << " Çåðêàëî ÷èñëà "<<q<<" - "<<mirror_number(q) << "\n";
+	std::cout << " Ã‡Ã¥Ã°ÃªÃ Ã«Ã® Ã·Ã¨Ã±Ã«Ã  "<<q<<" - "<<mirror_number(q) << "\n";
 	std::cout << "\n\n";
 
-	std::cout << " Çàäà÷à 3 \n ";
-	std::cout << "Ìàññèâ :\n";
+	std::cout << " Ã‡Ã Ã¤Ã Ã·Ã  3 \n ";
+	std::cout << "ÃŒÃ Ã±Ã±Ã¨Ã¢ :\n";
 	int n;
 	const int size = 10;
 	int arr[size]{ 10,16,49,34,2,6,16,10,5,24 };
 	//            0  1 2   3 4 5  6  7 8  9 
 	print_arr(arr, size);
-	std::cout << " Ââåäèòå ÷èñëî èç ìàññèâà : ";
+	std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã® Ã¨Ã§ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã  : ";
 	std::cin >> n;
 	int index = 0;
 	index = Pr_position(arr, size, n);
 	
 	if (index != -1)
-		std::cout << " Èíäåêñ ÷èñëà " << n << " : " << index << '\n';
+		std::cout << " ÃˆÃ­Ã¤Ã¥ÃªÃ± Ã·Ã¨Ã±Ã«Ã  " << n << " : " << index << '\n';
 	else
-		std::cout << " ×èñëà íåò â ìàññèâå \n";
+		std::cout << " Ã—Ã¨Ã±Ã«Ã  Ã­Ã¥Ã² Ã¢ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã¥ \n";
 	print_arr(arr, size);
 	std::cout << "\n\n";
 
-	std::cout << " Çàäà÷à 4 \n ";
+	std::cout << " Ã‡Ã Ã¤Ã Ã·Ã  4 \n ";
 	const int size2 = 14;
 	int arr2[size2]{};
 	int g, h;
-	std::cout << " Ââåäèòå äâà ÷èñëà, íà÷àëî è êîíåö äèàïàçîíà -> ";
+	std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¤Ã¢Ã  Ã·Ã¨Ã±Ã«Ã , Ã­Ã Ã·Ã Ã«Ã® Ã¨ ÃªÃ®Ã­Ã¥Ã¶ Ã¤Ã¨Ã Ã¯Ã Ã§Ã®Ã­Ã  -> ";
 	std::cin >> g >> h;
 	filling(arr2, size2, g, h);
-	std::cout << " Çàïîëíåííûé ìàññèâ \n";
+	std::cout << " Ã‡Ã Ã¯Ã®Ã«Ã­Ã¥Ã­Ã­Ã»Ã© Ã¬Ã Ã±Ã±Ã¨Ã¢ \n";
 	for (int i = 0; i < size2; i++)
 		std::cout << arr2[i] << ' ';
 	std::cout << "\n\n";
